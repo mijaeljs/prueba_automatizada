@@ -1,0 +1,134 @@
+
+/* --- Sección Imagen con Texto --- */
+.seccion-imagen {
+    background-color: #ffffff;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 40px 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap; /* clave para hacerlo responsive */
+}
+
+/* Imagen destacada */
+.imagen-destacada {
+    max-width: 100%;
+    height: auto;
+    margin: 20px;
+    border-radius: 10px;
+    flex: 1 1 300px;
+}
+
+/* Texto lateral */
+.texto-lateral {
+    padding: 20px;
+    flex: 1 1 300px;
+}
+.texto-lateral h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #055aa0;
+}
+.texto-lateral p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    /* Navbar responsiva */
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .navbar-links {
+        flex-direction: column;
+        width: 100%;
+    }
+    .btn-login {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Sección imagen y texto responsiva */
+    .seccion-imagen {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 15px;
+    }
+    .texto-lateral {
+        padding: 10px;
+    }
+    .texto-lateral h2 {
+        font-size: 1.5rem;
+    }
+    .texto-lateral p {
+        font-size: 1rem;
+    }
+}
+
+
+/* --- Estilos para PC (Reglas Generales) --- */
+.seccion-imagen {
+    padding: 60px 0;
+}
+
+.row {
+    align-items: center; /* Alinea los elementos verticalmente */
+}
+
+.imagen-destacada {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.texto-lateral {
+    padding-left: 30px;
+}
+
+/* --- Estilos para Celular (Media Query) --- */
+@media (max-width: 768px) {
+    .seccion-imagen {
+        padding: 30px 0;
+    }
+
+    .col-md-6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra los elementos horizontalmente */
+        margin-bottom: 20px;
+    }
+
+    .texto-lateral {
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
+/* Ajuste de imágenes del carrusel */
+.carousel-img {
+  height: 450px;        /* altura fija (puedes ajustar a 400, 500, etc.) */
+  object-fit: cover;    /* recorta la imagen sin deformarla */
+  border-radius: 12px;  /* esquinas redondeadas opcional */
+}
+
+/* Opcional: sombra y margen */
+.carousel-section {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+
+.carousel-img {
+  height: 350px;        /* altura fija */
+  object-fit: cover;    /* recorta sin deformar */
+  border-radius: 12px;  /* esquinas suaves */
+}
+    

@@ -1,0 +1,111 @@
+:root {
+    --color-fondo-pagina: #00579D;
+    --color-contenedor-login: #FF171B;
+    --color-texto-blanco: #fff;
+    --color-texto-negro: #000;
+    --color-fondo-input: #fff;
+    --color-texto-input: #333;
+    --sombra-caja: 0 4px 15px rgba(0, 0, 0, 0.2);
+    --border-radius-general: 20px;
+    --border-radius-input: 8px;
+}
+
+/* Estilos generales del cuerpo de la página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-fondo-pagina);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor principal para el logo y el formulario */
+.container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilo para el logo */
+.logo {
+    margin-bottom: 20px;
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+/* Contenedor del formulario de login */
+.login-box {
+    background-color: var(--color-contenedor-login);
+    padding: 40px;
+    border-radius: var(--border-radius-general);
+    box-shadow: var(--sombra-caja);
+}
+
+/* Título "INICIAR SESIÓN" */
+h2 {
+    color: var(--color-texto-blanco);
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+/* Estilo para los grupos de input (label + input) */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    color: var(--color-texto-blanco);
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: var(--border-radius-input);
+    font-size: 1.1em;
+    box-sizing: border-box;
+    color: var(--color-texto-input);
+}
+
+/* Estilo para el botón de "INGRESAR" */
+.btn_login {
+    background-color: var(--color-texto-negro);
+    color: var(--color-texto-blanco);
+    border: none;
+    padding: 15px;
+    font-size: 1.2em;
+    border-radius: var(--border-radius-input);
+    width: 100%;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn_login:hover {
+    background-color: #333;
+}
+
+/* Estilo para el enlace "¿Olvidaste tu contraseña?" */
+.forgot-password {
+    display: block;
+    margin-top: 20px;
+    color: var(--color-texto-blanco);
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+    color: #eee;
+    text-decoration: underline;
+}

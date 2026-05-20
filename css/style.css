@@ -1,0 +1,240 @@
+/* ==================== FUENTE GENERAL ==================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fc;
+    color: #333;
+}
+
+/* ==================== NAVBAR ==================== */
+.navbar-custom {
+    background-color: #0033cc;
+    padding: 1rem;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #ffffff !important;
+    font-weight: 600;
+}
+.navbar-custom .nav-link:hover {
+    color: #f7c000 !important;
+}
+
+/* ==================== SECCIÓN DE BIENVENIDA ==================== */
+.welcome-section-bg {
+    background: url("../recursos/202020.jpg") no-repeat center center;
+    background-size: cover; /* Para que la imagen cubra toda la sección */
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0; /* Espaciado arriba y abajo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Texto blanco para que contraste */
+    text-align: center;
+}
+
+
+/* Capa semitransparente para oscurecer y mejorar la legibilidad */
+.welcome-section-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Negro con transparencia */
+    z-index: 1;
+}
+
+/* Contenedor del texto por encima del overlay */
+.welcome-container {
+    position: relative;
+    z-index: 2;
+}   
+
+/* ==================== BOTONES ==================== */
+.btn-login {
+    padding: 0.6rem 1.2rem;
+    background-color: #e60000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.btn-login:hover {
+    background-color: #c00000;
+    transform: translateY(-2px);
+}
+
+/* ==================== NIVELES ==================== */
+.niveles-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0033cc;
+    position: relative;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    display: inline-block;
+}
+
+.niveles-section .container {
+    text-align: center;
+}
+
+.niveles-title::before,
+.niveles-title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 80px;
+    height: 4px;
+    background-color: #f7c000;
+    transform: translateY(-50%);
+}
+
+.niveles-title::before {
+    right: 100%;
+    margin-right: 20px;
+}
+
+.niveles-title::after {
+    left: 100%;
+    margin-left: 20px;
+}
+/* ==================== Tarjetas de niveles ==================== */
+.niveles-section .card {
+    background-color: #fffffff1; /* color de fondo de las tarjetas */
+    border: 1px solid #0033ccc7;    /* borde suave */
+    border-radius: 1.25rem;    /* bordes redondeados */
+}
+.niveles-section .btn:hover {
+    background-color: #000000;  /* color al pasar el mouse */
+    color: #000;                /* texto cambia a negro */
+    transform: scale(1.05);     /* pequeño efecto zoom */
+}
+
+
+/* ==================== imagenes ==================== */
+.nivel-img {
+    height: 180px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 1.35rem;
+}
+  
+
+
+/* ==================== FOOTER ==================== */
+.footer-custom {
+    background-color: #0033cc;
+    color: #fff;
+    padding: 40px 0;
+}
+.footer-custom h5 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #f7c000;
+}
+.footer-custom p,
+.footer-custom a {
+    color: #dcdcdc;
+    font-size: 0.95rem;
+}
+.footer-custom a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+.footer-divider {
+    border-top: 2px solid #f7c000;
+    margin: 1rem 0;
+}
+
+/* ==================== RESPONSIVO ==================== */
+@media (max-width: 768px) {
+    .niveles-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nivel-card {
+        width: 90%;
+    }
+    .welcome-title {
+        font-size: 2rem;
+    }
+}
+
+
+.navbar-brand img {
+  max-height: 50px;
+  object-fit: contain;
+}
+.navbar-brand span {
+  line-height: 1.1;
+  font-size: 14px;
+}
+
+
+.niveles-title {
+  font-size: 2.5rem;
+  color: #055aa0;
+  font-weight: bold;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #055aa0;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #333;
+}
+
+.card-footer .btn {
+  width: 100%;
+  font-weight: 500;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-footer .btn:hover {
+  background-color: #055aa0;
+  color: #fff;
+}
+
+
+/* ====== BOTÓN FLOTANTE DE FACEBOOK ====== */
+.facebook-float {
+    position: fixed;
+    bottom: 35px; /* distancia desde abajo */
+    right: 25px;  /* distancia desde la derecha */
+    z-index: 999;
+    width: 75px;
+    height: 75px;
+    background-color: #0865fe;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+.facebook-float img {
+    width: 40px;
+    height: 40px;
+}
+.facebook-float:hover {
+    transform: scale(1.1);
+    background-color: #0e5ed3;
+}

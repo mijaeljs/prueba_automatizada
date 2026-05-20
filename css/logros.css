@@ -1,0 +1,95 @@
+
+/* --- Sección de Logros --- */
+.achievements-section {
+    background-color: #4a98ddc1;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+.achievements-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.achievements-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #055aa0;
+    margin-bottom: 50px;
+}
+
+/* Grid principal */
+.achievements-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Tarjetas de logros */
+.achievement-card {
+    background-color: rgba(255, 255, 255, 0.616);
+    padding: 20px;
+    border-radius: 16px;
+    width: 370px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.achievement-card:hover {
+    transform: translateY(-5px);
+}
+.achievement-card img {
+    width: 250px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+.achievement-card h3 {
+    font-size: 20px;
+    color: #004080;
+    margin-bottom: 10px;
+}
+.achievement-card p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    /* Navbar responsiva */
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .navbar-links {
+        flex-direction: column;
+        width: 100%;
+    }
+    .btn-login {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Logros responsivo */
+    .achievements-title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    .achievements-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .achievement-card {
+        width: 90%;
+        max-width: 360px;
+    }
+    .achievement-card img {
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" href="recursos/logo.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"> <!-- Asegúrate que este archivo tenga tus estilos de navbar -->
+    <link rel="stylesheet" href="css/contacto.css"> <!-- Estilos específicos de esta página -->
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="recursos/logo.png" alt="Logo I.E. 7096" width="50" height="50" class="me-2">
+                <span class="fw-bold text-white">I.E. 7096<br>"Príncipe de Asturias"</span>
+            </a>
+
+            <!-- Botón responsive -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Enlaces -->
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="logros.html">Logros</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="acerca.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link text-white active" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="login.html">Iniciar Sesión</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- FORMULARIO DE CONTACTO -->
+
+  <!-- Fondo con imagen -->
+    <div class="background-image"></div>
+
+    <!-- Formulario centrado encima -->
+    <div class="form-overlay">
+        <div class="form-container">
+        <h2 class="text-center mb-4">Contáctanos</h2>
+        <form>
+            <div class="mb-3">
+            <label for="name" class="form-label">Nombre:</label>
+            <input type="text" id="name" name="name" class="form-control" placeholder="Tu Nombre" required>
+            </div>
+            <div class="mb-3">
+            <label for="email" class="form-label">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="Tu Correo" required>
+            </div>
+            <div class="mb-3">
+            <label for="message" class="form-label">Mensaje:</label>
+            <textarea id="message" name="message" class="form-control" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            </div>
+            <div class="text-center">
+            <button type="submit" class="btn btn-primary px-4">Enviar</button>
+            </div>
+        </form>
+        </div>
+    </div>
+    <footer class="footer-custom text-center">
+        <div class="container">
+            <h5>Contacto</h5>
+            <p>Av. CEsar Vallejo, Villa El Salvador, Lima - Perú</p>
+            <p>Email: principedeasturias7096@.edu.pe | Tel: (01) 123-4567</p>
+            <div class="footer-divider"></div>
+            <p>&copy; 2025 I.E. 7096 "Príncipe de Asturias". Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

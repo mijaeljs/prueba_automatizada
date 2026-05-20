@@ -1,0 +1,74 @@
+/* --- Navbar --- */
+.navbar-custom {
+    background-color: #055aa0;
+    padding: 1rem;
+}
+.navbar-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-brand-custom {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+.navbar-logo {
+    width: 40px;
+    height: 50px;
+    margin-right: 0.5rem;
+}
+.navbar-brand-text {
+    font-size: 1.25rem;
+}
+.btn-login {
+    padding: 0.5rem 1rem;
+    background-color: #7bcbe6;
+    color: #000;
+    border: none;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+.btn-login:hover {
+    background-color: #e9ecef;
+}
+
+/* Estilos para la sección */
+.seccion-imagen {
+  background-color: #ffffff; /* Puedes cambiar este color */
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 40px 20px;
+  border-radius: 12px;
+}
+
+/* Imagen con margen */
+.imagen-destacada {
+  max-width: 100%;
+  height: auto;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+/* Texto a la derecha */
+.texto-lateral {
+  padding: 20px;
+}
+
+.texto-lateral h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #055aa0;
+}
+
+.texto-lateral p {
+  font-size: 1.1rem;
+  color: #333;
+}
