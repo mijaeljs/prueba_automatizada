@@ -1,0 +1,23 @@
+name: Auditoria de Rendimiento Automatizada
+
+on:
+  push:
+    branches: [ "main" ]
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  auditoria_web:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Descargar codigo fuente
+      uses: actions/checkout@v4
+
+    - name: Analizar rendimiento con Lighthouse
+      uses: treosh/lighthouse-ci-action@v12
+      with:
+        urls: |
+          https://mijaeljs.github.io/prueba_automatizada/
+        budgetPath: ./budget.json
+        uploadArtifacts: true
