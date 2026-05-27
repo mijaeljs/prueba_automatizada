@@ -1,0 +1,31 @@
+name: Validacion de Sintaxis JavaScript (QA Linter)
+
+# El pipeline se ejecutará cada vez que hagas un cambio (push) en la rama main
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  analisis-codigo:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Paso 1: Descargar el código de tu página web a la máquina virtual
+    - name: Copiar codigo fuente
+      uses: actions/checkout@v4
+
+    # Paso 2: Configurar Node.js (necesario para correr el linter)
+    - name: Configurar entorno Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    # Paso 3: Instalar la herramienta ESLint de forma rápida
+    - name: Instalar ESLint
+      run: npm install eslint@8.57.0 --no-save
+
+    # Paso 4: Ejecutar la revisión automática de tus archivos .js
+    - name: Analizar archivos JavaScript
+      run: npx eslint **/*.js --no-eslintrc --setting "env={browser: true, es2021: true}" --rule "no-undef: error" --rule "no-unused-vars: warn"
