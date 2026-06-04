@@ -46,13 +46,11 @@ prueba_automatizada/
 
 ## Publicación del Proyecto
 
-Sitio web publicado mediante GitHub Pages:
-
+Sitio Web (GitHub Pages):
 https://mijaeljs.github.io/prueba_automatizada/
 
-Repositorio GitHub:
-
-https://github.com/mijaeljs/prueba_automatizada
+Sitio Web (Netlify):
+https://692f98ccdb9c36395c2a621c--majestic-pithivier-f4b332.netlify.app/
 
 ## Aprendizajes Obtenidos
 
